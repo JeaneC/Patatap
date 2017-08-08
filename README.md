@@ -1,6 +1,6 @@
 # Patatap
 
-### __Description__: A simple online list in which you can modify its contents.
+### __Description__: A online music keyboard
 
 __Version__
 
