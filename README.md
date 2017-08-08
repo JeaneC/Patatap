@@ -1,6 +1,6 @@
 # Patatap
 
-### __Description__: A online music keyboard
+### __Description__: An online music keyboard
 
 __Version__
 
@@ -13,3 +13,4 @@ __0.50 - Commit Pretty Circles__
 __1.00 - Commit Complete__
   - Spawning of circles is now random
   - Keypress now also generates a unique sound
+  - Now online
