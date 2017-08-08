@@ -14,3 +14,6 @@ __1.00 - Commit Complete__
   - Spawning of circles is now random
   - Keypress now also generates a unique sound
   - Now online
+
+  __1.00 - Commit Mobile/Click__
+    - Clicking or Tapping should now spawn circles (should work on phone)

@@ -170,7 +170,7 @@
   	}
   }
 
-
+    var keys = Object.keys(keyData);
     var circles = [];
 
 
@@ -180,6 +180,7 @@
         var maxPoint = new Point(view.size.width, view.size.height);
         var randomPoint = Point.random();
         var point = maxPoint * randomPoint;
+        //console.log(point);
         var newCircle = new Path.Circle(point,500);
         newCircle.fillColor = keyData[event.key].color;
         keyData[event.key].sound.play();
@@ -188,6 +189,17 @@
 
     }
 
+    function onMouseDown(event) {
+    	// Create a path:
+    	path = new Path();
+    	path.add(event.point);
+      var newCircle = new Path.Circle(event.point,50);
+
+      var circleKey = keys[Math.floor(Math.random()*keys.length)];
+      newCircle.fillColor = keyData[circleKey].color;
+      keyData[circleKey].sound.play();
+      circles.push(newCircle);
+    }
 
     function onFrame(event){
       for(var i=0; i< circles.length; i++){
